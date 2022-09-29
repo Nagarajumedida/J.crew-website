@@ -9,6 +9,7 @@ import New from "../Pages/New";
 import Sales from "../Pages/Sales";
 import Signin from "../Pages/Signin";
 import Stories from "../Pages/Stories";
+import Women from "../Pages/Women";
 
 
 export default function AllRoutes(){
@@ -17,6 +18,7 @@ export default function AllRoutes(){
             <Routes>
                 <Route path="/" element={<Jcrew/>}/>
                 <Route path="/home" element={<Home/>}/>
+                <Route path="/women" element={<Women/>}/>
                 <Route path="/cashmere" element={<Cashmere/>}/>
                 <Route path="/kids" element={<Kids/>}/>
                 <Route path="/men" element={<Men/>}/>
