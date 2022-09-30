@@ -55,4 +55,4 @@ import "./signin.css"
      </>
   )
 }
-export default Signin;
+export default Signin
