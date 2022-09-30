@@ -1,0 +1,60 @@
+.signinform{
+    background-color: aquamarine;
+    height: 500px;
+}
+.content{
+    display: flex;
+    gap:200px;
+}
+.title{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    margin-right: 900px;
+    color: teal;  
+}
+.form{
+    
+    text-align:start;
+
+}
+.group{
+   margin-top: 20px;
+  
+}
+.group label{
+    /* text-align: start; */
+    margin-left: 200px;
+    margin-top: -60px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(42, 2, 241);
+    /* width: 300px; */
+}
+.group input{
+    margin-left: 200px;
+    width: 400px;
+    height: 40px;
+    border: 2px solid rgb(138, 144, 244);
+    /* color: blue; */
+   /* justify-items: center; */
+   text-align: center;
+}
+
+.image101{
+    margin-bottom: 100px;
+}
+.form-submit{
+    background-color:rgb(139, 139, 245);
+    color: white;
+    font-size: 20px;
+}
+.signin-page-link{
+    font-size: 18px;
+ color:rgb(38, 0, 128);
+ font-weight: bold;
+ cursor: pointer;
+}
+.signin-page-link:hover{
+    text-decoration: underline;
+}

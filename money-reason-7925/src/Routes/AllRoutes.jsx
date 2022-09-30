@@ -8,6 +8,7 @@ import Men from "../Pages/Men";
 import New from "../Pages/New";
 import Sales from "../Pages/Sales";
 import Signin from "../Pages/Signin";
+import Signup from "../Pages/Signup";
 import Stories from "../Pages/Stories";
 import Women from "../Pages/Women";
 
@@ -25,6 +26,7 @@ export default function AllRoutes(){
                 <Route path="/new" element={<New/>}/>
                 <Route path="/sales" element={<Sales/>}/>
                 <Route path="/stories" element={<Stories/>}/>
+                <Route path="/signup" element={<Signup/>}/>
                 <Route path="/signin" element={<Signin/>}/>
             </Routes>
         </Box>

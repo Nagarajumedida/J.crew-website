@@ -91,7 +91,7 @@ const Navbar = ()=>{
             <h3 id="navone" className="dropbtn">
               Home
             </h3>
-            <div id="one1" className="dropdown-content">
+            <div id="one1" className="dropdown-content" style={{marginLeft:"-800px"}}>
               <HomeHover/>
             </div>
           </div>
@@ -117,7 +117,8 @@ const Navbar = ()=>{
           </div>
           <div className="signin">
            <input placeholder="Search J.Crew"/>
-          <Link to={"signin"} >Sign In</Link>
+           <Link to={"signup"}>Signup</Link>
+          <Link to={"signin"} >Login</Link>
           <BsFillBagFill size={25} style={{cursor:"pointer"}}/>
           </div>
       </nav>
