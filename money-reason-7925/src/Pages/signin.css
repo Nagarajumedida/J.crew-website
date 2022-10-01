@@ -1,5 +1,5 @@
 .signinform{
-    background-color: aquamarine;
+    background-color: white;
     height: 500px;
 }
 .content{
@@ -28,7 +28,7 @@
     margin-top: -60px;
     font-weight: bold;
     font-size: 20px;
-    color: rgb(42, 2, 241);
+    color: teal;
     /* width: 300px; */
 }
 .group input{
@@ -45,7 +45,7 @@
     margin-bottom: 100px;
 }
 .form-submit{
-    background-color:rgb(139, 139, 245);
+    background-color:teal;
     color: white;
     font-size: 20px;
 }

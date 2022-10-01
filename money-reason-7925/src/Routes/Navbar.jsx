@@ -115,17 +115,21 @@ const Navbar = ()=>{
           </div>
 
           </div>
+         
           <div className="signin">
            <input placeholder="Search J.Crew"/>
-           <Link to={"signup"}>Signup</Link>
-          <Link to={"signin"} >Login</Link>
+           <Link to={"signup"} style={{fontWeight:"bold"}}>Signup</Link>
+          <Link to={"signin"} style={{fontWeight:"bold"}}>Login</Link>
           <BsFillBagFill size={25} style={{cursor:"pointer"}}/>
           </div>
-      </nav>
-      <hr />
-       <div>
-        <img src="https://www.jcrew.com/in/plp/womens/features/new-arrivals?intcmp=newHP_video_1_women_new&om_i=newHP_p1" alt="" />
+
+          {/* <div className="help">
+         <h1>Have a question? We can help.</h1>
+         <hr />
        </div>
+          <hr /> */}
+      </nav>
+     
 
 
 
