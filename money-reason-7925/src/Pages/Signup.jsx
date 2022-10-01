@@ -1,9 +1,33 @@
 import React from 'react'
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import "./signup.css"
 // import { MdAccountBox } from 'react-icons/md';
 
+let initialState = {
+    name:"",
+    email:"",
+    passowrd:""
+  }
+
 const Signup = () => {
+
+    const [data,setData] = useState(initialState);
+let array = JSON.parse(localStorage.getItem("logindata")) || {};
+
+let handleChange = (e) =>{
+  const{name,value} = e.target;
+  setData({...data,[name]:value})
+}
+
+let handleSubmit = (event)=>{
+      event.preventDefault();
+      array = {...data};
+      localStorage.setItem("logindata",JSON.stringify(array));
+      alert("Account Created")
+    //   window.location("./signin.jsx")
+}
+
   return (
     <>
      <section className='signup'>
@@ -12,13 +36,21 @@ const Signup = () => {
 
                     <div className='signup-content'>
                         <div className='signup-form'>
-                            <form className='register-form' id='register-form'>
+                            <form className='register-form' id='register-form' onSubmit={handleSubmit}>
                                     <div className='form-group'>
                                         <label htmlFor="name">
                                             Full name
                                         </label>
                                         <br />
-                                        <input type="text" name="name" id='name' autoComplete='off' placeholder='Enter Your Name'/>
+                                        <input type={"text"} 
+                                                name="name" 
+                                                id='name' 
+                                                autoComplete='off' 
+                                                placeholder='Enter Your Name'
+                                                value={data.name}
+                                                onChange={handleChange}
+                                                required
+                                                />
                                     </div>
 
                                     <div className='form-group'>
@@ -26,7 +58,15 @@ const Signup = () => {
                                            Email
                                         </label>
                                         <br />
-                                        <input type="email" name="email" id='email' autoComplete='off' placeholder='Enter Your Email'/>
+                                        <input type="email" 
+                                                name="email" 
+                                                id='email'
+                                                autoComplete='off' 
+                                                placeholder='Enter Your Email'
+                                                value={data.email}
+                                                onChange={handleChange}
+                                                required
+                                                />
                                     </div>
 
                                     <div className='form-group'>
@@ -34,7 +74,13 @@ const Signup = () => {
                                             Phone Number
                                         </label>
                                         <br />
-                                        <input type="number" name="phone" id='phone' autoComplete='off' placeholder='Enter Your Phone Number'/>
+                                        <input type="number"    
+                                                 name="phone" 
+                                                 id='phone' 
+                                                  autoComplete='off' 
+                                                  placeholder='Enter Your Phone Number'
+                                                   onChange={handleChange}
+                                                  />
                                     </div>
 
                                    < div className='form-group'>
@@ -45,14 +91,21 @@ const Signup = () => {
                              <option value="china">CHINA</option>
                              <option value="usa">USA</option>
                              <option value="canada">CANADA</option>
-                         </select>
+                              </select>
                                 </div>
                                     <div className='form-group'>
                                         <label htmlFor="password">
                                             Password
                                         </label>
                                         <br />
-                                        <input type="password" name="password" id='password' autoComplete='off' placeholder='Enter Your Password'/>
+                                        <input type="password" 
+                                                name="password" 
+                                                id='password' 
+                                                autoComplete='off' 
+                                                placeholder='Enter Your Password'
+                                                value={data.password}
+                                                onChange={handleChange}
+                                                />
                                     </div>
 
                                     <div className='form-group'>
@@ -60,7 +113,13 @@ const Signup = () => {
                                             Confirm Password
                                         </label>
                                         <br />
-                                        <input type="password" name="cpassword" id='cpassword' autoComplete='off' placeholder='Enter Confirm Password'/>
+                                        <input type="password" 
+                                        name="cpassword" 
+                                        id='cpassword' 
+                                        autoComplete='off'
+                                         placeholder='Enter Confirm Password'
+                                         onChange={handleChange}
+                                         />
                                     </div>
 
                                     <div className='form-group form-button' >

@@ -1,8 +1,34 @@
 import React from 'react'
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import "./signin.css"
+import "./signin.css";
+
+let initial = {
+  email: "",
+  password: ""
+};
 
  const Signin = () => {
+
+  let array = JSON.parse(localStorage.getItem("logindata"));
+  const [shot, setShot] = useState(initial);
+  let handleChange = (e) => {
+    const { name, value } = e.target;
+    setShot({ ...shot, [name]: value });
+  };
+  let loginSubmit = (event) => {
+    event.preventDefault();
+    if (array.email === shot.email && array.password === shot.password) {
+      alert("LOGIN-SUCCESSFULL");
+    } else if (array.email !== shot.email) {
+      alert("PlEASE Check email");
+    } else if (array.password !== shot.password) {
+      alert("PLEASE CHECK YOUR PASSWORD");
+    } else {
+      alert("No Credentials Found");
+    }
+  };
+
   return (
      <>
        <section className='signinform'>
@@ -11,13 +37,18 @@ import "./signin.css"
 
                     <div className='content'>
                         <div className='signin-form'>
-                            <form className='form' >
+                            <form className='form' onSubmit={loginSubmit} >
                                     <div className='group'>
                                         <label htmlFor="name">
                                             Full name
                                         </label>
                                         <br />
-                                        <input type="text" name="name" id='name' autoComplete='off' placeholder='Enter Your Name'/>
+                                        <input type="text" 
+                                        name="name" id='name' 
+                                        autoComplete='off' 
+                                        placeholder='Enter Your Name'
+                                        onChange={handleChange}
+                                        />
                                     </div>
 
                                     <div className='group'>
@@ -25,7 +56,14 @@ import "./signin.css"
                                            Email
                                         </label>
                                         <br />
-                                        <input type="email" name="email" id='email' autoComplete='off' placeholder='Enter Your Email'/>
+                                        <input type="email" 
+                                        name="email" 
+                                        id='email' 
+                                        autoComplete='off' 
+                                        placeholder='Enter Your Email'
+                                        value={shot.email}
+                                        onChange={handleChange}
+                                        />
                                     </div>
                             
                                     <div className='group'>
@@ -33,7 +71,14 @@ import "./signin.css"
                                             Password
                                         </label>
                                         <br />
-                                        <input type="password" name="password" id='password' autoComplete='off' placeholder='Enter Your Password'/>
+                                        <input type="password" 
+                                        name="password" 
+                                        id='password' 
+                                        autoComplete='off' 
+                                        placeholder='Enter Your Password'
+                                        value={shot.password}
+                                        onChange={handleChange}
+                                        />
                                     </div>
 
                                     <div className='group form-button' >
