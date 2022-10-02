@@ -1,0 +1,174 @@
+
+.okati{
+    width: 98%;
+   margin-left: 20px;
+   margin-bottom: 100px;
+  }
+  
+  .kids{
+    padding: 100px;
+  }
+  .kids h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .kids p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+  }
+  /*  */
+  .aaru{
+      /* background-color: antiquewhite; */
+      padding: 30px;
+      margin-top: 50px;
+      width: 90%;
+      margin: auto;
+  }
+  .aaru-1 h1{
+      font-size: 40px;
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      margin-bottom: 30px;
+  }
+  .aaru-2{
+      display: flex;
+      margin: auto;
+      gap: 20px;
+      text-align: start;
+  }
+  .aaru-3{
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+  }
+  .aaru-3 img{
+      width:100%;
+      border-radius: 10px;
+      display: block;
+   transition: transform 0.5s;
+  } 
+  .aaru-4{
+      width: 100%;
+      height: 0;
+      background: linear-gradient(rgba(248, 244, 244, 0.6),#eeb983);
+      border-radius: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      overflow: hidden;
+      /* display: flex ; */
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      /* padding: 0 40px; */
+      text-align: center ;
+      font-size: 14px;
+      transition: height 0.5s;
+  }
+  .aaru-4 p{
+      font-weight: 500;
+      /* margin-bottom: 10px; */
+  }
+  .aaru-4 h1{
+      font-weight: bold;
+      font-size: 18px;
+      /* margin-top: -20px; */
+  }
+  .aaru-3:hover img{
+      transform: scale(1.1);
+  }
+  .aaru-3:hover .aaru-4{
+      height:30%;
+    }
+    .heart{
+      font-size: 25px;
+      margin-left: 180px;
+      bottom: 80px;
+      cursor: pointer;
+      /* padding-bottom: 20px; */
+      /* padding: 20px; */
+    }
+    .heart:hover{
+      color: red;
+    }
+    /* rendu */
+    .rendu{
+        width: 90%;
+        margin: auto;
+    }
+    .rendu-1{
+        display: flex;
+        margin:auto;
+        gap: 30px;
+    }
+    .rendu h1{
+        font-size: 20px;
+    }
+    .moodu h1{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 300;
+      margin-top: -20px;
+
+    }
+  
+    /* edu */
+    .edu{
+      /* background-color: #eeb983; */
+      width: 95%;
+      margin: auto;
+      margin-bottom: 60px;
+    }
+    .edu h1{
+      padding: 20px;
+      font-size: 40px;
+      font-weight: 300;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     margin-top: 40px;
+    }
+    .edu-1{
+      display: flex;
+      margin: auto;
+      gap: 20px;
+      text-align: start;
+    }
+    .edu-2 p{
+      font-weight: bold;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 10px;
+      text-decoration: underline;
+    }
+    .edu-2 hr{
+      font-weight: bold;
+      color: blue;
+      background: red;
+    }
+  
+    /* ... */
+    .eight{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 60px;
+    }
+    .eight h1{
+      text-align: center;
+      font-weight: bold;
+    }
+    .eight img{
+      width: 200px;
+    }
+    .eight-1 {
+        display: flex;
+        margin: auto;
+        gap: 30px;
+    }
+    .nine{
+        width: 90%;
+        text-align: start;
+        margin: auto;
+        margin-bottom: 40px;
+        font-size: 12px;
+    }

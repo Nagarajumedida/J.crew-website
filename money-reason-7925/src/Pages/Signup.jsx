@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import "./signup.css"
 // import { MdAccountBox } from 'react-icons/md';
 
@@ -13,6 +13,7 @@ let initialState = {
 const Signup = () => {
 
     const [data,setData] = useState(initialState);
+    const navigte=useNavigate();
 let array = JSON.parse(localStorage.getItem("logindata")) || {};
 
 let handleChange = (e) =>{
@@ -26,6 +27,7 @@ let handleSubmit = (event)=>{
       localStorage.setItem("logindata",JSON.stringify(array));
       alert("Account Created")
     //   window.location("./signin.jsx")
+    navigte("/signin")
 }
 
   return (

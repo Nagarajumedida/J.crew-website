@@ -44,71 +44,71 @@ const Navbar = ()=>{
             <Link to={"/sales"}>Sale</Link> */}
 
          <div className="dropdown">
-            <h3 id="navone" className="dropbtn">
+            <Link id="navone" className="dropbtn" to={"/new"}>
               New
-            </h3>
-            <div id="one1" className="dropdown-content">
+            </Link>
+            <div id="one1" className="dropdown-content" >
               <NewHover />
             </div>
           </div>
 
-          <div className="dropdown">
-            <h3 id="navone" className="dropbtn">
+          <div className="dropdown" >
+            <Link id="navone" className="dropbtn" to={"/women"}>
               Women
-            </h3>
+            </Link>
             <div id="one1" className="dropdown-content">
               <WomenHover/>
             </div>
           </div>
 
           <div className="dropdown" >
-            <h3 id="navone" className="dropbtn">
+            <Link id="navone" className="dropbtn" to={"/men"}>
               Men
-            </h3>
+            </Link>
             <div id="one1" className="dropdown-content" style={{marginLeft:"-500px"}}>
               <MenHover />
             </div>
           </div>
 
-          <div className="dropdown">
-            <h3 id="navone" className="dropbtn">
+          <div className="dropdown" >
+            <Link id="navone" className="dropbtn" to={"/kids"}>
               Kids
-            </h3>
+            </Link>
             <div id="one1" className="dropdown-content" style={{marginLeft:"-600px"}}>
               <KidsHover />
             </div>
           </div>
 
-          <div className="dropdown">
-            <h3 id="navone" className="dropbtn">
+          <div className="dropdown" >
+            <Link id="navone" className="dropbtn" to={"/cashmere"}>
               Cashmere
-            </h3>
+            </Link>
             <div id="one1" className="dropdown-content">
               <CashmereHover/>
             </div>
           </div>
           <div className="dropdown">
-            <h3 id="navone" className="dropbtn">
+            <Link id="navone" className="dropbtn" to={"/home"}>
               Home
-            </h3>
+            </Link>
             <div id="one1" className="dropdown-content" style={{marginLeft:"-800px"}}>
               <HomeHover/>
             </div>
           </div>
 
           <div className="dropdown">
-            <h3 id="navone" className="dropbtn">
+            <Link id="navone" className="dropbtn" to={"/stories"}>
               Stories
-            </h3>
+            </Link>
             <div id="one1" className="dropdown-content" style={{marginLeft:"-800px"}}>
               <StoriesHover />
             </div>
           </div>
 
           <div className="dropdown">
-            <h3 id="navone" className="dropbtn">
+            <Link id="navone" className="dropbtn" to={"/sales"}>
               Sales
-            </h3>
+            </Link>
             <div id="one1" className="dropdown-content" style={{marginLeft:"-1000px"}}>
               <SalesHover />
             </div>
@@ -126,10 +126,10 @@ const Navbar = ()=>{
           {/* <div className="help">
          <h1>Have a question? We can help.</h1>
          <hr />
-       </div>
-          <hr /> */}
+       </div> */}
       </nav>
      
+      <hr />
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import "./signin.css";
 
 let initial = {
@@ -10,8 +10,10 @@ let initial = {
 
  const Signin = () => {
 
-  let array = JSON.parse(localStorage.getItem("logindata"));
+  
   const [shot, setShot] = useState(initial);
+  const navigate=useNavigate(null);
+  let array = JSON.parse(localStorage.getItem("logindata"));
   let handleChange = (e) => {
     const { name, value } = e.target;
     setShot({ ...shot, [name]: value });
@@ -20,6 +22,7 @@ let initial = {
     event.preventDefault();
     if (array.email === shot.email && array.password === shot.password) {
       alert("LOGIN-SUCCESSFULL");
+      navigate('/')
     } else if (array.email !== shot.email) {
       alert("PlEASE Check email");
     } else if (array.password !== shot.password) {

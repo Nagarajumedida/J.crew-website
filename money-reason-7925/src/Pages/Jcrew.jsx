@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from "@chakra-ui/react";
 import "./Jcrew.css"
-// import {BsArrowRight} from  "react-icons/bs"
+import {AiOutlineHeart} from  "react-icons/ai"
 
 
 export const Jcrew = () => {
@@ -85,6 +85,118 @@ export const Jcrew = () => {
                           </div>
 
                     </div>
+              </div>
+
+              {/* .... */}
+              <div className='aaru'>
+                      <div className='aaru-1'>
+                        <h1>You'll also Love</h1>
+                      </div>
+                      <div className='aaru-2'>
+
+                              <div className='aaru-3'>
+                                     <AiOutlineHeart className='heart'/>
+                                    <img src="https://www.jcrew.com/s7-img-facade/BJ606_GR7805?wid=376" alt="" />
+                                    <div className='aaru-4'>
+                                        <p>Cable knit stretch wool cardigan swater</p>
+                                        <h1>INR 22,903.00</h1>
+                                    </div>
+                              </div>
+
+                              <div className='aaru-3'>
+                                       <AiOutlineHeart className='heart'/>
+                                    <img src="https://www.jcrew.com/s7-img-facade/BD139_EE1644?wid=376" alt="" />
+                                    <div className='aaru-4'>
+                                        <p>Adidas Terrax voyagar 21 travel sneakers</p>
+                                        <h1>INR 13,903.00</h1>
+                                    </div>
+                              </div>
+
+                              <div className='aaru-3'>
+                                   <AiOutlineHeart className='heart'/>
+                                    <img src="https://www.jcrew.com/s7-img-facade/AH203_EB0928?wid=376" alt="" />
+                                    <div className='aaru-4'>
+                                        <p>Women Borken Stock Arizona soft soft footbed sandles</p>
+                                        <h1>INR 19,993.00</h1>
+                                    </div>
+                              </div>
+
+                              <div className='aaru-3'>
+                                   <AiOutlineHeart className='heart'/>
+                             <img src="https://www.jcrew.com/s7-img-facade/AV253_GR5954_m?wid=376" alt="" />
+                                    <div className='aaru-4'>
+                                        <p>Tall slouch boyfriend chino pant</p>
+                                        <h1>INR 12,903.00</h1>
+                                    </div>
+                              </div>
+
+                              <div className='aaru-3'>
+                            <AiOutlineHeart className='heart'/>
+                                    <img src="https://www.jcrew.com/s7-img-facade/BG645_GR6954?wid=376" alt="" />
+                                    <div className='aaru-4'>
+                                        <p>Cashmere cropped sweater tank</p>
+                                        <h1>INR 12,223.00</h1>
+                                    </div>
+                              </div>
+
+                              <div className='aaru-3'>
+                                     <AiOutlineHeart className='heart'/>
+                                    <img src="https://www.jcrew.com/s7-img-facade/AW429_BL8133?wid=376" alt="" />
+                                    <div className='aaru-4'>
+                                        <p>Wide bream socket hat with UV coating</p>
+                                        <h1>INR 6,773.00</h1>
+                                    </div>
+                              </div>
+                      </div>
+              </div>
+
+              {/*  */}
+              <div className='edu'>
+                   <h1>More You need to see</h1>
+                   <div className='edu-1'>
+                          <div className='edu-2'>
+                            <img src="https://www.jcrew.com/s7-img-facade/BJ569_BL8267_m?wid=416" alt="" />
+                            <p>shop women sweaters</p>
+                            <hr />
+                          </div>
+
+                          <div className='edu-2'>
+                            <img src="https://www.jcrew.com/s7-img-facade/BL007_GR7105_m?wid=416" alt="" />
+                            <p>Shop Women's Shirts & Tops</p>
+                            <hr />
+                          </div>
+
+                          <div className='edu-2'>
+                            <img src="https://www.jcrew.com/s7-img-facade/BL022_BR6398_m?wid=416" alt="" />
+                            <p>Shop Women's T-shirts & Tops</p>
+                            <hr />
+                          </div>
+
+                          <div className='edu-2'>
+                            <img src="https://www.jcrew.com/s7-img-facade/BK961_GR7805_m?wid=416" alt="" />
+                            <p>Shop Women's  Jumpsuits</p>
+                            <hr style={{fontWeight:"bold"}}/>
+                          </div>
+
+                          <div className='edu-2'>
+                            <img src="https://www.jcrew.com/s7-img-facade/BK003_WY9859?wid=416" alt="" />
+                            <p>shop women's blazers</p>
+                            <hr />
+                          </div>
+
+                          <div className='edu-2'>
+                            <img src="https://www.jcrew.com/s7-img-facade/BN269_BK0001_m?wid=416" alt="" />
+                            <p>shop women's pants</p>
+                            <hr />
+                          </div>
+                   </div>
+              </div>
+
+              <div className='eight'>
+                   <h1>Recently viewed</h1>
+                  <div>
+                      <img src="https://www.jcrew.com/s7-img-facade/BK477_BK0001?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=300&hei=300" alt="" />
+                  </div>
               </div>
         </div>
     </Box>
