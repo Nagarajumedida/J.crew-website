@@ -1,0 +1,236 @@
+.hover{
+    width:100%;
+    background-color:white;
+    padding: 10px;
+    /* margin-left: -200px; */
+}
+
+.hover1{
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    margin-left: 150px;
+    align-items: start;
+    /* justify-content: space-around; */
+}
+.hover2{
+    margin-top: 10px;
+   text-align: start;
+   
+}
+.hover2 h1{
+    /* font-size:20px; */
+    font-weight: bold;
+}
+.hover2 p{
+    margin-top: 5px;
+    font-weight: 500;
+   
+}
+.hover3{
+    margin-left: 100px;
+}
+.hover3 h1{
+    margin-top: 10px;
+    text-align: start;
+     
+    /* font-size: 20px; */
+    font-weight: bold;
+}
+
+.hover4{
+    display: flex;
+    text-align: start;
+    gap: 20px;
+}
+.hover4-one h2{
+    font-weight: 50px;
+    color: grey;
+    /* font-size: 20px; */
+}
+.hover4-one p{
+    margin-top: 5px;
+    font-weight: 500;
+}
+.hover5{
+    margin-left: 100px;
+    text-align: start;
+}
+.hover5 h1{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.hover6{
+    display: flex;
+    gap: 20px;
+} 
+.hover6 img{
+    width:200px;
+    height: 300px;
+}
+.hover6 p{
+    font-weight: 300px;
+}
+ /* **************   Cashmere Hover  *************/
+ .cash-hover{
+    /* height: 200px;
+    width: 500px; */
+    margin-left:530px;
+    text-align: start;
+ }
+ .cash-hover h1{
+    font-weight: bold;
+  
+ }
+ .cash-hover p{
+    margin-top: 5px;
+ }
+
+ /* ************HOME HOVER****** */
+ .home{
+    width: 2000px;
+    background-color: white;
+    padding: 10px;
+ }
+ .home1{
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    margin-left: 300px;
+    align-items: start;
+    gap: 50px;
+    text-align: start;
+ }
+ .home2 p{
+    font-weight: bold;
+    font-size: 13px;
+ }
+ .home2 h1{
+    font-weight: bold; 
+ }
+ .home3 h1{
+    font-weight: bold;
+ }
+
+ /* ************** Sales Hover ********** */
+ .salesHover{
+    display: flex;
+    /* padding: 10px; */
+    margin: auto;
+    margin-left: 400px;
+    align-items: start;
+ }
+ .sale{
+    display: flex;
+    /* padding: 20px; */
+    margin: auto;
+    margin-left: 250px;
+    align-items: start;
+    gap: 100px;
+    text-align: start;
+ }
+ .sale1 h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+ }
+ .sale2 h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+ }
+
+ /* ******* Womens Hover*/
+ .women{
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    margin-left: 200px;
+    text-align: start;
+ }
+ .women2 h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+ }
+ .women2 p{
+    margin-top: 10px;
+ }
+ .pSale{
+    color: red;
+ }
+ .women-img{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    text-align: start;
+ }
+ .women-img p{
+   font-size: 14px;
+   font-weight: bold;
+ }
+ .women-img1 p{
+   font-size: 14px;
+   font-weight: bold;
+ }
+ .women-img1{
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    text-align: start;
+    margin-top: 30px; 
+ }
+ .women-img img{
+    height: 300px;
+    width: 300px;
+ }
+ .women-img1 img{
+    height: 200px;
+    width: 200px;
+ }
+
+ /* ************* STORIES ***** */
+ .story1{
+  padding: 30px;
+   display: flex;
+   margin: auto;
+   gap: 50px;
+   text-align: start;
+   margin-left: 200px;
+ }
+ .story2{
+   text-align:start ;
+ }
+ .story2 img{
+   width:100px;
+   height: 100px;
+ }
+  .story2 p{
+   font-weight: bold;
+  }  
+ .story4 h1{
+   font-weight: bold;
+ }
+ .story4 h2{
+   color: gray;
+   margin-top: 15px;
+ }
+ .story4 p{
+   font-size: 15px;
+ }
+ .story5 {
+      margin-top: 20px;
+ }
+ .story5 h2{
+   font-weight: bold;
+ }
+ .story7{
+   display: flex;
+   gap: 20px;
+
+   font-size: 12px;
+ }
+ .story6 img{
+   height: 250px;
+   width: 200px;
+ }

@@ -1,0 +1,75 @@
+.signup{
+    background-color: white;
+    
+    
+    /* width: 1000px; */
+    height: 800px;
+    /* margin-left: 150px; */
+    /* margin-top: 50px;    */
+}
+.signup-content{
+    display: flex;
+    gap:200px;
+}
+.form-title{
+    font-weight: bold;
+    font-size: 40px;
+    padding: 10px;
+    margin-left:100px;
+    color: teal
+   
+    
+}
+.register-form{
+    /* background-color: rgb(20, 204, 236); */
+    text-align:start;
+    /* margin-left: 100px; */
+    /* padding: 20px; */
+    /* margin-top: 30px; */
+}
+.form-group{
+   margin-top: 20px;
+  
+}
+.form-group label{
+    /* text-align: start; */
+    margin-left: 200px;
+    margin-top: -60px;
+    font-weight: bold;
+    font-size: 20px;
+    color: teal;
+    /* width: 300px; */
+}
+.form-group input{
+    margin-left: 200px;
+    width: 400px;
+    height: 40px;
+    border: 2px solid rgb(138, 144, 244);
+    /* color: blue; */
+   /* justify-items: center; */
+   text-align: center;
+}
+.country{
+    margin-left: 200px;
+    width: 400px;
+    height: 40px;
+    border: 2px solid rgb(138, 144, 244);
+   text-align: center;
+}
+.image{
+    margin-top: 100px;
+}
+.form-submit{
+    background-color:rgb(139, 139, 245);
+    color: white;
+    font-size: 20px;
+}
+.signup-page-link{
+    font-size: 18px;
+ color:rgb(38, 0, 128);
+ font-weight: bold;
+ cursor: pointer;
+}
+.signup-page-link:hover{
+    text-decoration: underline;
+}
